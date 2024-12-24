@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="">
+
+    <!-- =======Cdn Links=========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- ==========CDN Links============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- =======StyleSheets======== -->
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="container-lg">
+        <div class="nav-top">
+            <div class="nav-img">
+                <a href="">
+                    <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/logo/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="nav-items">
+                <div class="nav-input">
+                    <input type="search" placeholder="Enter Your items">
+                </div>
+                <div class="nav-dropdown">
+                    <select>
+                        <option value="All Categories"><a href="">All Categories</a></option>
+                        <option value="Womens"><a href="">Womens</a></option>
+                        <option value="Mens"><a href="">Mens</a></option>
+                        <option value="Electronics"><a href="">Electronics</a></option>
+                    </select>
+                </div>
+                <div class="nav-icons">
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-profiles">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href=""><i class="fa-regular fa-user"></i> Account</a>
+                        <ul class="navlink-dropdown">
+                            <li><a href="">Register</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="second-nav">
+            <div class="toggle-img">
+                <img src="assets/img/menu-btn.png" alt="">
+    
+                
+                <div class="category">
+                    <ul class="category-list border-list">
+                        <li>Dairy & Bakery</li>
+                        <li>Fruits & Vegetable</li>
+                        <li>Snaks & Spice</li>
+                        <li>Juice & Drinks</li>
+                        <li>Fruits & Vegetable</li>
+                    </ul>
+                    <ul class="category-list border-lists">
+                        <li>Dairy</li>
+                        <li>Milk</li>
+                        <li>Ice Cream</li>
+                        <li>Cheese</li>
+                        <li>Frozen Custard</li>
+                        <li>Frozen Yogurt</li>
+                    </ul>
+                    <ul class="category-list border-lists">
+                        <li>Bakery</li>
+                        <li>Cake And Pastry</li>
+                        <li>Rusk Toast</li>
+                        <li>Bread & Buns</li>
+                        <li>Chacolate Brownie</li>
+                        <li>Cream Roll</li>
+                    </ul>
+                </div>
+            </div>    
+
+            <div class="category-link">
+                <ul class="category-listlink">
+                    <li><a href="">Home</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul>
+                <ul class="category-listlink">
+                    <li><a href="">Category</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul>
+                <ul class="category-listlink">
+                    <li><a href="">Product</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul> 
+                <ul class="category-listlink">
+                    <li><a href="">Pages</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul>
+                <ul class="category-listlink">
+                    <li><a href="">Blog</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul>
+                <ul class="category-listlink">
+                    <li><a href="">Elements</a></li>
+                    <ul class="hoverlist">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Fashion</a></li>
+                    </ul>
+                </ul>                    
+            </div>
+
+            <div class="phone-list">
+                <a href="">
+                    <i class="fa-solid fa-phone"></i> +123 ( 456 ) ( 7890 )
+                </a>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-main">
+                <div class="carousel-content ms-5">
+                    <div>
+                        <h3><span>100%</span>Oraganic Fruits</h3>
+                        <h1>Explore fresh way to stuff your wallet</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus nisi harum saepe</p>
+                        <a href=""><button>Shop Now</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-main carousel-main-2">
+                <div class="carousel-content ms-5">
+                    <div>
+                        <h3><span>100%</span>Oraganic Fruits</h3>
+                        <h1>Explore fresh way to stuff your wallet</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus nisi harum saepe</p>
+                        <a href=""><button>Shop Now</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <main class="mt-5 pt-5">
+        <section class="container">
+            <div class="menu-list d-flex gap-4">
+                <div class="menu-list-links col-4">
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Cake & Milk</h6></a>
+                        <p>(65 items)</p>
+                    </div>
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Fresh Meat</h6></a>
+                        <p>(30 items)</p>
+                    </div>
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Vegetable</h6></a>
+                        <p>(25 items)</p>
+                    </div>
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Apple & Mango</h6></a>
+                        <p>(45 items)</p>
+                    </div>
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Strawberry</h6></a>
+                        <p>(68 items)</p>
+                    </div>
+                    <div class="menu-list-content">
+                        <a href="#"><h6>Vegetable</h6></a>
+                        <p>(25 items)</p>
+                    </div>
+                </div>
+
+                <div class="menu-img-link">
+                    <div class="menu-dis-content">
+                        <div class="menu-dis-h1">
+                            <h1>50</h1>
+                        </div>
+                        <div class="menu-dis-h3">
+                            <h3>%</h3>
+                            <h3>OFF</h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-btn-link">
+                        <h3>Cake</h3>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-img-links">
+                    <div class="menu-dis-content">
+                        <div class="menu-dis-h1">
+                            <h1>40</h1>
+                        </div>
+                        <div class="menu-dis-h3">
+                            <h3>%</h3>
+                            <h3>OFF</h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-btn-link">
+                        <h3>Milk</h3>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-lg mt-5 popular-section">
+            <div class="popular-contant text-center">
+                <h2>Popular Products</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis</p>
+            </div>
+            <div class="popular-contant mt-5 d-flex gap-4">
+                <div class="popular-first-content d-flex flex-column">
+                    <div class="popular-category position-sticky top-0">
+                        <ul class="ps-0">
+                            <li>All <i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Snack<i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Vegetable<i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Fruit<i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Bakery<i class="fa-solid fa-arrow-right"></i></li>
+                        </ul>
+                    </div>
+                    <div class="popular-category-flex">
+                        <div class="popular-flex-content">
+                            <h3>Juicy</h3>
+                            <h5>FRUITS</h5>
+                            <p>100% Natural</p>
+                            <button class="btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productcard">
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/1.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/9.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/2.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/17.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/11.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/3.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/10.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                    <div class="card p-2" style="width: 15rem;">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/17.jpg" class="card-img-top" alt="...">
+                        <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                        <div class="card-body m-0 p-0">
+                          <p class="text-center fs-6">Vegetable</p>
+                        </div>
+                        <div class="product-rating text-center">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="text-center card-para">
+                            <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="card-prices d-flex m-auto gap-2">
+                            <p>$120.25</p>
+                            <p>$123.25</p>
+                          </div> 
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container-lg pt-5 mt-5 d-flex gap-4">
+            <div class="productcard-section">
+                <div class="product-packing">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h3 class="fs-5">Product Packing</h3>
+                    <p class="fs-6 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+                </div>
+            </div>
+
+            <div class="productcard-section">
+                <div class="product-packing">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h3 class="fs-5">24X7 Support</h3>
+                    <p class="fs-6 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+                </div>
+            </div>
+
+            <div class="productcard-section">
+                <div class="product-packing">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3 class="fs-5">Delivery In 5 Days</h3>
+                    <p class="fs-6 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Product-Flex-count mt-5 pt-5">
+            <div class="Product-Flex-count-img ">
+                <div class="Product-Flex-main p-3 rounded-1 ms-5">
+                    <h3 class="fs-5"><span class="text-success fs-2">35%</span>OFF</h3>
+                    <h1 class="fs-3 fw-bold">Great deal on organic food.</h1>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do maecenas accumsan lacus vel facilisi</p>
+                    <div class="count d-flex gap-2">
+                        <div>
+                            <h5>77</h5>
+                            <p>Days :</p>
+                        </div>
+                        <div>
+                            <h5>03</h5>
+                            <p>Hrs :</p>
+                        </div>
+                        <div>
+                            <h5>14</h5>
+                            <p>Mins :</p>
+                        </div>
+                        <div>
+                            <h5>23</h5>
+                            <p>Sec </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-Banner container d-flex  mt-5 pt-5">
+            <div class="col-6 d-flex gap-2">
+                <div class="card p-2" style="width: 15rem;">
+                    <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/1.jpg" class="card-img-top" alt="...">
+                    <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                    <div class="card-body m-0 p-0">
+                      <p class="text-center fs-6">Vegetable</p>
+                    </div>
+                    <div class="product-rating text-center">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="text-center card-para">
+                        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      </div>
+                      <div class="card-prices d-flex m-auto gap-2">
+                        <p>$120.25</p>
+                        <p>$123.25</p>
+                      </div> 
+                </div>
+
+                <div class="card p-2" style="width: 15rem;">
+                    <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/9.jpg" class="card-img-top" alt="...">
+                    <i class="fa-solid fa-lock text-success text-center card-icon"></i>
+                    <div class="card-body m-0 p-0">
+                      <p class="text-center fs-6">Vegetable</p>
+                    </div>
+                    <div class="product-rating text-center">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="text-center card-para">
+                        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      </div>
+                      <div class="card-prices d-flex m-auto gap-2">
+                        <p>$120.25</p>
+                        <p>$123.25</p>
+                      </div> 
+                </div>
+            </div>
+            <div class="col-6 banner-img">
+                <div>
+                    <h1 class="fw-bold">Organic & Healthy Vegetables</h1>
+                    <p class="ms-5"><span class="fw-bold fs-5">25%</span>OFF</p>
+                    <button class="btn ms-5">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 pt-5">
+            <div class="Client-Heading text-center">
+                <h3 class="text-dark fw-bold fs-2">Great Words From People</h3>
+                <p class="fs-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis</p>
+            </div>
+            <div class="client-flex mt-5 d-flex justify-content-between">
+                <div class="clients-details">
+                    <div class="clients-img">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/testimonial/1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text-secondary">Co Founder</p>
+                        <h4>Stephen Smith</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magnam.</p>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="clients-details">
+                    <div class="clients-img">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/testimonial/3.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text-secondary">Team Leader</p>
+                        <h4>Saddika Alard</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magnam.</p>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="clients-details">
+                    <div class="clients-img">
+                        <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/testimonial/2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text-secondary">Manager</p>
+                        <h4>Lorem Robinos</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magnam.</p>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 pt-5">
+            <div class="text-center">
+                <h1 class="fw-bold ">Latest News</h1>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis</p>
+            </div>
+            <div class="latest-news-details d-flex justify-content-between mt-5">
+                <div class="latest-news-contant">
+                    <p class="text-secondary">By Admin | Snacks</p>
+                    <h5 class="fs-5">Urna pertium elit mauris cursur at elit vestibulum</h5>
+                    <h3 class="fs-6 text-success">Read More</h3>
+                    <div class="latest-news-menu">
+                        <h1>10 Oct</h1>
+                    </div>
+                </div>
+
+                <div class="latest-news-contant">
+                    <p class="text-secondary">By Admin | Snacks</p>
+                    <h5 class="fs-5">Urna pertium elit mauris cursur at elit vestibulum</h5>
+                    <h3 class="fs-6 text-success">Read More</h3>
+                    <div class="latest-news-menu">
+                        <h1>10 Oct</h1>
+                    </div>
+                </div>
+
+                <div class="latest-news-contant">
+                    <p class="text-secondary">By Admin | Snacks</p>
+                    <h5 class="fs-5">Urna pertium elit mauris cursur at elit vestibulum</h5>
+                    <h3 class="fs-6 text-success">Read More</h3>
+                    <div class="latest-news-menu">
+                        <h1>10 Oct</h1>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5 p-5 d-flex justify-content-evenly">
+        <div>
+            <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/logo/logo.png" alt="">
+            <p class="text-secondary">Carrot is the biggest market of grocery products. Get your daily needs from our store.</p>
+            <p class="text-secondary"><i class="fa-solid fa-location-dot text-success fs-5"></i> 51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.
+            </p>
+            <p class="text-secondary"><i class="fa-regular fa-envelope text-success"></i> example@email.com</p>
+            <p class="text-secondary"><i class="fa-solid fa-phone text-success fs-5"></i>+91 123 4567890</p>
+        </div>
+
+        <div>
+            <ul>
+                <h5 class="fw-bold">Company</h5>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">contact Us</a></li>
+                <li><a href="#">Support Center</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <h5 class="fw-bold">Category</h5>
+                <li><a href="#">Dairy & Bakery</a></li>
+                <li><a href="#">Fruits & Vegetable</a></li>
+                <li><a href="#">Snack & Spice</a></li>
+                <li><a href="#">Juice & Drinks</a></li>
+                <li><a href="#">Chicken & Meat</a></li>
+                <li><a href="#">Fast Food</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h5 class="fw-bold">Subscribe Our Newsletter</h5>
+            <input type="text" placeholder="Search here...">
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-basketball"></i>
+            </div>
+            <div class="d-flex gap-1">
+                <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/insta/1.jpg" alt="">
+                <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/insta/2.jpg" alt="">
+                <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/insta/3.jpg" alt="">
+                <img src="https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/insta/4.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

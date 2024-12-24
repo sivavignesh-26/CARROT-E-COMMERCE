@@ -1,0 +1,746 @@
+/* =========>GoogleFont<============= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap');
+
+:root{
+    --body-font: 'lato', sans-serif;
+    --second-font: 'Spartan', sans-serif;
+    --background-color: #64B495;
+    --title-color: hsl(0, 0%, 13%);
+    --text-color: hsl(154, 13%, 32%);
+    --text-color-light: hsl(60, 1%, 56%);
+    --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+    --color-filter: invert(1);
+    --All-bg-color:  rgb(247 247 248 );
+    --border-color: #e5e7eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ========>NavBarTop<======== */
+
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid gray;
+    padding: 2.5rem;
+}
+
+.nav-items{
+    display: flex;
+    border: 1px solid green;
+    align-items: center;
+    width: fit-content;
+    border-radius: 3px ;
+}
+
+::placeholder{
+    font-family: var(--second-font);
+    font-size: 13px;
+}
+
+.nav-input input{
+    border: none;
+    border-right: 1.5px solid var(--background-color);
+    font-family: var(--second-font);
+    margin-left: 10px;
+    outline: none;
+}
+
+.nav-dropdown select{
+    border: none;
+    font-family: var(--second-font);
+    font-size: 13px;
+    outline: none;
+
+}
+.nav-dropdown option:focus{
+    /* outline: none; */
+    border: none;
+}
+
+.nav-dropdown{
+    margin-left: 10px;
+}
+
+.nav-dropdown select:active,
+.nav-dropdown select:visited{
+    border: none;
+}
+
+
+.nav-icons a i{
+    background-color: #64B495;
+    color: whitesmoke;
+    height: 40px;
+    padding: 10px;
+    border-radius: 0 3px 3px 0;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-profiles .nav-links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-link .navlink-dropdown{
+    position: absolute;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    display: none;
+}
+.nav-link .navlink-dropdown li a{
+    color: black;
+
+}
+
+.nav-links .nav-link a{
+    color: var(--title-color);
+    font-weight: bold;
+    font-family: var(--second-font);
+    font-size: 16px;
+}
+
+.nav-profiles .nav-link a:hover{
+    color: var(--background-color);
+}
+
+.nav-profiles .nav-link:hover .navlink-dropdown{
+    display: block;
+}
+
+/* ===========>Second Nav<============= */
+.second-nav{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.second-nav .toggle-img{
+    width: fit-content;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    height: fit-content;
+}
+
+.second-nav .toggle-img img{
+    width: 20px;
+    filter:var(--color-filter);
+    padding: 2px;
+
+}
+
+.category{
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: var(--box-shadow);
+}
+
+.category .border-lists li{
+    margin-bottom: 10px;
+}
+
+.category .category-list{
+    list-style: none;
+}
+
+.category .border-list li{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 0.3rem;
+}
+
+.category .category-list li:nth-child(1){
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.category .category-list li:nth-child(1):hover{
+    color: var(--background-color);
+}
+
+.category-list{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.category-link .category-listlink ul li{
+    display: none;
+}
+
+
+.category-listlink:hover .hoverlist li{
+    display: block;
+    box-shadow: var(--box-shadow);
+}
+.hoverlist{
+    background-color: white;
+    /* box-shadow: var(--box-shadow); */
+    width: fit-content;
+    padding: 20px;
+    position: absolute ;
+}
+
+.second-nav .toggle-img:hover .category .category-list{
+    display: block;
+    /* z-index: 9999999; */
+    /* position: absolute; */
+}
+
+.category-listlink li{
+    list-style: none;
+
+}
+
+.category-listlink li a{
+    text-decoration: none;
+    color: black ;
+}
+
+.phone-list a {
+    color: black;
+    cursor: pointer;
+}
+
+.category-link{
+    display: flex;
+}
+
+/* ===========>Home PAGE<======== */
+.carousel-main{
+    display: flex;
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/banner/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.carousel-main .carousel-content h3 span{
+    color: var(--background-color);
+    text-decoration: underline;
+}
+.carousel-main .carousel-content h3{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.carousel-main .carousel-content{
+    width: 600px;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-main .carousel-content h1{
+    font-weight: bold;
+    font-size: 3rem;
+    word-spacing: 0.3rem;
+}
+
+.carousel-main .carousel-content a button{
+    background-color: var(--background-color);
+    color: white ;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+}
+
+.carousel-main .carosal-image {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-main .carosal-image img{
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 100% !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: transparent !important;
+    border: 1px solid black !important;
+
+}
+
+.carousel-main-2 {
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/banner/banner-2.jpg);
+}
+
+/* =======>Menu Sections<========= */
+
+.menu-list-content{
+    text-align: center;
+    padding: 0.5rem;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid var(--border-color);
+    background-color: rgb(247 247 248 )
+}
+
+.menu-list-content a h6{
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+.menu-list-content a h6:hover{
+    color: var(--background-color);
+}
+.menu-list-content p{
+    color: gray;
+    cursor: pointer;
+}
+
+.menu-img-link{
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/categories/3.jpg);
+    height: 535px;
+    width: 350px;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.menu-img-links{
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/categories/4.jpg);
+    height: 535px;
+    width: 350px;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.menu-btn-link{
+    margin-top: 16rem;
+}
+
+.menu-btn-link button{
+    background-color: var(--background-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.menu-btn-link button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.menu-btn-link h3{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-dis-content{
+    margin: 20px;
+}
+
+.menu-dis-content .menu-dis-h1 h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.menu-dis-content .menu-dis-h3{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    left: 3.5rem;
+    bottom: 3.5rem;
+}
+
+.menu-dis-content .menu-dis-h3 h3{
+    font-size: 1rem;
+}
+
+.menu-dis-content .menu-dis-h3 h3:nth-child(2){
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/* ==========>Popular Contant<============= */
+
+.popular-contant {
+    font-family: "Manrope", sans-serif;
+}
+
+.popular-contant h2{
+    font-weight: bold;
+}
+
+.popular-contant p{
+    font-size: 18px;
+    color: grey;
+}
+
+.popular-category-flex {
+    width: 250px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/product-banner.jpg);
+    border-radius: 0.3rem;
+}
+
+.popular-first-content .popular-category{
+    width: 250px;
+}
+
+
+.popular-first-content ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    background-color: var(--All-bg-color);
+    border-radius: 0.3rem;
+}
+.popular-first-content ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.popular-category-flex{
+    position: sticky;
+    top: 10rem
+}
+
+.popular-flex-content .btn{
+    background-color: var(--background-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 0.3rem;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.popular-flex-content {
+    position: relative;
+    top: 5rem;
+    left: 1.5rem;
+}
+
+.popular-flex-content h3,
+.popular-flex-content p{
+    color: #fff ;
+    line-height: 20px;
+}
+
+.popular-flex-content h5{
+    color: rgb(247 232 170);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.productcard .card-icon{
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 4px;
+    margin: auto;
+    position: relative;
+    bottom: 15px;
+}
+
+.product-rating {
+    position: relative;
+    top: -19px;
+}
+
+.product-rating i{
+    color: orangered;
+    font-size: 15px;
+}
+
+.productcard .card-para{
+    position: relative;
+    top: -19px;
+}
+
+.productcard .card-para p{
+    font-size: 15px !important;
+    color: black;
+}
+
+.card-prices p:nth-child(1){
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-prices p:nth-child(2){
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    position: relative;
+    top: 10px;
+}
+
+.card-prices {
+    position: relative;
+}
+
+.productcard{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    gap: 20px;
+}
+
+/* =======>Productcaed<========= */
+.product-packing{
+    background-color: var(--All-bg-color);
+    border: 1px solid  var(--border-color);
+    width: 350px;
+    height: fit-content ;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-packing i{
+    color: var(--background-color);
+    font-size: 2rem;
+}
+
+/* =====>Product Flex img<========= */
+
+.Product-Flex-count-img{
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/deal/bg-deal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.Product-Flex-main{
+    background-color: #ffffff38;
+    box-shadow: var(--box-shadow);
+    width: 500px;
+}
+
+.count{
+    border: 1px solid rgb(233 203 190);
+    width: fit-content;
+    padding: 5px 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ========>Banner Image<========== */
+
+.banner-img{
+    background: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/product/products-rightview.jpg);
+    height: 425px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.banner-img div {
+    width: 220px;
+    position: relative;
+    left: 24rem;
+}
+
+.btn{
+    background-color: var(--background-color);
+    color: #fff;
+    transition: all 1s ease;
+}
+
+/* ====================>Clients Details<================================== */
+.clients-details{
+    border: 1px solid var(--border-color);
+    width: 300px;
+    background-color: var(--All-bg-color);
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.clients-img{
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: var(--All-bg-color);
+    padding: 1rem;
+    border-radius: 50%;
+    border-bottom: 1px solid var(--border-color);
+}
+.clients-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* ==========>Latest News<==================== */
+
+.latest-news-menu{
+    background-image: url(https://maraviyainfotech.com/projects/carrot-tailwind/assets/img/blog/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.latest-news-menu:hover{
+    transform: rotate(3deg) scale(1.2 );
+}
+
+
+.latest-news-contant{
+    border: 1px solid var(--border-color);
+    width: 350px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.latest-news-menu h1{
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 1rem 0;
+    display: flex;
+    position: relative;
+    left: 12rem;
+    top: 10rem;
+}
+/* ============>Footer<================== */
+
+footer{
+    background-color: var(--All-bg-color);
+}
+
+footer div:nth-child(1){
+    line-height: 2rem;
+    width: 400px;
+}
+
+footer div:nth-child(2) ul li{
+    list-style: none;
+}
+
+footer div:nth-child(2) ul li a{
+    color: gray;
+    line-height: 2rem;
+}
+
+footer div:nth-child(3) ul li{
+    list-style: none;
+}
+
+footer div:nth-child(3) ul li a{
+    color: gray;
+    line-height: 2rem;
+}
+
+footer div:nth-child(4) ::placeholder{
+    color: gray;
+}
+
+footer div:nth-child(4) input{
+    border: 1px solid var(--border-color);
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+
+footer div:nth-child(4) div i{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+footer div:nth-child(4) div img{
+    height: 70px;
+    width: 70px;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: wheat;
+}
